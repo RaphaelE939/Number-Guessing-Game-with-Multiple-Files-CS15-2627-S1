@@ -1,6 +1,7 @@
-
 def loss_of_score(score):
         score -= 10
+        if score < 0:
+            score = 0
         return score
 
 def at_specific_lowscore(score):
@@ -18,3 +19,6 @@ def score_rating(score):
         print("At least you passed...")
     elif score >= 0:
         print("WOW... I don't mean that in a good way. You BETTER keep practicing")
+
+if __name__ == "__main__":
+    score_rating(100)

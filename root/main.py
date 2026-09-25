@@ -5,6 +5,8 @@ from score import loss_of_score, score_rating, at_specific_lowscore
 
 score = 100
 
+
+
 secret_number = utils.generate_secret_number()
 
 while True:
